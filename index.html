@@ -4,214 +4,328 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Đặng Nguyễn Đức Anh | AI Researcher Portfolio</title>
+<meta name="description" content="Portfolio of Đặng Nguyễn Đức Anh — AI researcher working on NLP, LLM fine-tuning, knowledge distillation and recommendation systems.">
+<meta name="theme-color" content="#f4f0e8">
+<meta property="og:title" content="Đặng Nguyễn Đức Anh — AI Researcher">
+<meta property="og:description" content="NLP, LLM fine-tuning, knowledge distillation and recommendation systems.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/avatar.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23e5482b'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='18' font-style='italic' text-anchor='middle' fill='%23fff'%3Ed%3C/text%3E%3C/svg%3E">
+<script>
+  (function () {
+    var d = document.documentElement;
+    d.classList.add('js');
+    var t = null;
+    try { t = localStorage.getItem('theme'); } catch (e) {}
+    if (!t && window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches) t = 'dark';
+    if (t === 'dark') d.setAttribute('data-theme', 'dark');
+  })();
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header class="site-header">
-  <div class="container header-inner">
-    <a href="#hero" class="logo">DNDA</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-arrow-ur" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-arrow-r" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></g></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5Z" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></g></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/></g></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/></symbol>
+    <symbol id="i-cpu" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="2"/><rect x="9.5" y="9.5" width="5" height="5" rx="1"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></g></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 9 5-9 5-9-5 9-5Z"/><path d="m3 13 9 5 9-5"/></g></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-terminal" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2.5"/><path d="m7 10 3 2-3 2M13 15h4"/></g></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></g></symbol>
+  </defs>
+</svg>
 
-    <nav class="nav" id="mainNav">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#hero" class="logo" aria-label="Home">
+      <span class="logo-mark">d</span><span class="logo-text">Đức Anh</span>
+    </a>
+
+    <nav class="nav" id="mainNav" aria-label="Primary">
       <ul class="nav-list">
         <li><a href="#hero" class="nav-link active">Home</a></li>
         <li><a href="#about" class="nav-link">About</a></li>
         <li><a href="#skills" class="nav-link">Skills</a></li>
         <li><a href="#experience" class="nav-link">Experience</a></li>
         <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#certifications" class="nav-link">Certs</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
     </nav>
 
     <div class="header-actions">
-      <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark/light mode">🌙</button>
-      <button id="hamburger" class="hamburger" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
+      <button id="themeToggle" class="icon-btn theme-toggle" aria-label="Switch to dark mode">
+        <svg class="icon icon-moon"><use href="#i-moon"/></svg>
+        <svg class="icon icon-sun"><use href="#i-sun"/></svg>
+      </button>
+      <button id="hamburger" class="icon-btn hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span>
       </button>
     </div>
   </div>
 </header>
 
-<main>
+<main id="main">
 
   <!-- HERO -->
   <section id="hero" class="hero">
-    <div class="container hero-inner reveal">
-      <img src="assets/avatar.png" alt="Đặng Nguyễn Đức Anh" class="avatar">
-      <h1>Hi, I'm <span class="highlight">Đặng Nguyễn Đức Anh</span></h1>
-      <p class="subtitle">AI Researcher · NLP &amp; Applied Machine Learning</p>
-      <p class="hero-meta">📍 Hanoi, Vietnam &nbsp;|&nbsp; 📞 +84 966 638 825 &nbsp;|&nbsp; ✉️ ducanhdn.ptit@gmail.com</p>
-      <div class="hero-actions">
-        <a href="#projects" class="btn btn-primary">View my work</a>
-        <a href="#contact" class="btn btn-outline">Get in touch</a>
+    <canvas id="fieldCanvas" class="field-canvas" aria-hidden="true"></canvas>
+
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow reveal"><span class="dot"></span>AI Researcher · NLP &amp; Applied Machine Learning</p>
+        <h1 class="hero-title reveal">
+          <span class="hero-hi">Hi, I'm</span>
+          Đặng Nguyễn <em>Đức Anh</em>
+        </h1>
+        <p class="hero-lede reveal">
+          I turn state-of-the-art NLP research into fast, domain-specific models — from LLM fine-tuning and
+          knowledge distillation to recommendation systems that run in production.
+        </p>
+        <div class="hero-actions reveal">
+          <a href="#projects" class="btn btn-primary">View my work <svg class="icon"><use href="#i-arrow-r"/></svg></a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+        <ul class="hero-meta reveal">
+          <li><svg class="icon"><use href="#i-pin"/></svg>Hanoi, Vietnam</li>
+          <li><svg class="icon"><use href="#i-phone"/></svg><a href="tel:+84966638825">+84 966 638 825</a></li>
+          <li><svg class="icon"><use href="#i-mail"/></svg><a href="mailto:ducanhdn.ptit@gmail.com">ducanhdn.ptit@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <figure class="hero-portrait reveal">
+        <div class="portrait-frame">
+          <img src="assets/avatar.jpg" alt="Portrait of Đặng Nguyễn Đức Anh" width="900" height="900" fetchpriority="high">
+        </div>
+        <figcaption class="portrait-tag portrait-tag-a">
+          <span class="tag-label">Now</span>
+          AI Engineer · RIPT
+        </figcaption>
+        <div class="portrait-tag portrait-tag-b">
+          <span class="tag-label">Focus</span>
+          LLM · Distillation · RecSys
+        </div>
+      </figure>
+    </div>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>Natural Language Processing</span><span>LLM Fine-tuning</span><span>Knowledge Distillation</span><span>Recommendation Systems</span><span>Hybrid Search</span><span>Transformers</span>
+        <span>Natural Language Processing</span><span>LLM Fine-tuning</span><span>Knowledge Distillation</span><span>Recommendation Systems</span><span>Hybrid Search</span><span>Transformers</span>
       </div>
     </div>
   </section>
 
   <!-- ABOUT -->
   <section id="about" class="section">
-    <div class="container">
-      <h2 class="section-title reveal">About Me</h2>
-      <div class="about-grid reveal">
-        <div class="about-text">
-          <p>
-            AI Researcher and IT undergraduate specializing in <strong>Natural Language Processing</strong> and
-            applied machine learning. I research and develop production-scale NLP architectures, focusing on
-            <strong>LLM fine-tuning</strong>, <strong>knowledge distillation</strong>, and
-            <strong>recommendation systems</strong>.
-          </p>
-          <p>
-            Proven ability to translate state-of-the-art academic findings into highly-performant,
-            domain-specific models — combining a solid grounding in ML theory and mathematics with
-            hands-on engineering execution.
-          </p>
-          <ul class="about-facts">
-            <li><strong>Education:</strong> B.Sc. in Information Technology, Posts and Telecommunications Institute of Technology (PTIT) — GPA 3.3/4.0, 2025 – Present</li>
-            <li><strong>Location:</strong> Hanoi, Vietnam</li>
-            <li><strong>Email:</strong> ducanhdn.ptit@gmail.com</li>
-            <li><strong>Phone:</strong> +84 966 638 825</li>
-          </ul>
-        </div>
+    <div class="wrap split">
+      <header class="section-head reveal">
+        <span class="section-index">01</span>
+        <h2 class="section-title">About</h2>
+      </header>
+
+      <div class="split-body">
+        <p class="lead reveal">
+          AI researcher and IT undergraduate specializing in <em>Natural Language Processing</em> and applied
+          machine learning. I research and develop production-scale NLP architectures.
+        </p>
+        <p class="prose reveal">
+          My work centers on <strong>LLM fine-tuning</strong>, <strong>knowledge distillation</strong> and
+          <strong>recommendation systems</strong>. I translate state-of-the-art academic findings into
+          highly-performant, domain-specific models — combining a solid grounding in ML theory and mathematics
+          with hands-on engineering execution.
+        </p>
+
+        <dl class="facts reveal">
+          <div class="fact">
+            <dt>Education</dt>
+            <dd>B.Sc. Information Technology, Posts and Telecommunications Institute of Technology (PTIT)<br><span class="muted">GPA 3.3 / 4.0 · 2025 – Present</span></dd>
+          </div>
+          <div class="fact">
+            <dt>Location</dt>
+            <dd>Hanoi, Vietnam</dd>
+          </div>
+          <div class="fact">
+            <dt>Email</dt>
+            <dd><a href="mailto:ducanhdn.ptit@gmail.com">ducanhdn.ptit@gmail.com</a></dd>
+          </div>
+          <div class="fact">
+            <dt>Phone</dt>
+            <dd><a href="tel:+84966638825">+84 966 638 825</a></dd>
+          </div>
+        </dl>
       </div>
     </div>
   </section>
 
   <!-- SKILLS -->
-  <section id="skills" class="section section-dark tile-1">
-    <div class="container">
-      <h2 class="section-title reveal">Skills</h2>
-      <div class="skills-grid">
+  <section id="skills" class="section section-tint">
+    <div class="wrap">
+      <header class="section-head section-head-row reveal">
+        <span class="section-index">02</span>
+        <h2 class="section-title">Skills</h2>
+      </header>
 
-        <div class="skill-card reveal">
-          <div class="skill-icon">🧠</div>
-          <h3>Core AI/ML</h3>
-          <div class="skill-tags">
+      <div class="bento">
+        <article class="bento-card bento-lg reveal">
+          <svg class="icon icon-lg"><use href="#i-cpu"/></svg>
+          <h3>Core AI / ML</h3>
+          <p class="bento-note">The research areas I go deep on.</p>
+          <div class="chips">
             <span>NLP</span><span>Knowledge Distillation</span><span>Hybrid Search</span><span>Recommendation Systems</span>
           </div>
-        </div>
+        </article>
 
-        <div class="skill-card reveal">
-          <div class="skill-icon">🔬</div>
+        <article class="bento-card reveal">
+          <svg class="icon icon-lg"><use href="#i-layers"/></svg>
           <h3>Deep Learning</h3>
-          <div class="skill-tags">
+          <div class="chips">
             <span>Transformers</span><span>LLMs</span><span>RNNs</span>
           </div>
-        </div>
+        </article>
 
-        <div class="skill-card reveal">
-          <div class="skill-icon">💻</div>
+        <article class="bento-card reveal">
+          <svg class="icon icon-lg"><use href="#i-code"/></svg>
           <h3>Programming &amp; Frameworks</h3>
-          <div class="skill-tags">
+          <div class="chips">
             <span>Python</span><span>PyTorch</span><span>SQL</span><span>Pandas</span><span>NumPy</span>
           </div>
-        </div>
+        </article>
 
-        <div class="skill-card reveal">
-          <div class="skill-icon">🛠️</div>
+        <article class="bento-card reveal">
+          <svg class="icon icon-lg"><use href="#i-terminal"/></svg>
           <h3>Tools &amp; Platforms</h3>
-          <div class="skill-tags">
+          <div class="chips">
             <span>Hugging Face</span><span>Docker</span><span>Ollama</span><span>GitHub</span><span>Kaggle</span>
           </div>
-        </div>
+        </article>
 
-        <div class="skill-card reveal">
-          <div class="skill-icon">🌍</div>
+        <article class="bento-card reveal">
+          <svg class="icon icon-lg"><use href="#i-globe"/></svg>
           <h3>Languages</h3>
-          <div class="skill-tags">
+          <div class="chips">
             <span>English — IELTS 6.0</span>
           </div>
-        </div>
-
+        </article>
       </div>
     </div>
   </section>
 
   <!-- EXPERIENCE -->
   <section id="experience" class="section">
-    <div class="container">
-      <h2 class="section-title reveal">Experience</h2>
+    <div class="wrap split">
+      <header class="section-head reveal">
+        <span class="section-index">03</span>
+        <h2 class="section-title">Experience</h2>
+      </header>
 
-      <div class="timeline">
-        <div class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">2026 – Present</span>
+      <div class="split-body">
+        <article class="job reveal">
+          <div class="job-when">
+            <span class="job-date">2026 – Present</span>
+            <span class="job-badge">Current</span>
+          </div>
+          <div class="job-main">
             <h3>AI Engineer</h3>
-            <p class="timeline-org">Data Governance Laboratory, Research Institute of Posts and Telecommunications (RIPT)</p>
+            <p class="job-org">Data Governance Laboratory, Research Institute of Posts and Telecommunications (RIPT)</p>
             <ul>
               <li>Drive applied R&amp;D by adapting state-of-the-art NLP architectures from recent literature into custom models, achieving measurable performance and latency gains against baseline lab models.</li>
               <li>Design and fine-tune NLP and recommendation models for production chatbot and job-description (JD) matching systems.</li>
               <li>Own end-to-end data preprocessing for domain-specific datasets, from cleaning through feature engineering, for production use.</li>
             </ul>
           </div>
-        </div>
+        </article>
 
-        <div class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">2025 – 2026</span>
+        <article class="job reveal">
+          <div class="job-when">
+            <span class="job-date">2025 – 2026</span>
+          </div>
+          <div class="job-main">
             <h3>Intern AI Engineer</h3>
-            <p class="timeline-org">Data Governance Laboratory, Research Institute of Posts and Telecommunications (RIPT)</p>
+            <p class="job-org">Data Governance Laboratory, Research Institute of Posts and Telecommunications (RIPT)</p>
             <ul>
               <li>Evaluated and implemented advanced ML/DL architectures for domain-specific tasks, earning a promotion to full-time engineer.</li>
               <li>Delivered hands-on projects applying deep learning concepts to real datasets, establishing the groundwork for later production model work.</li>
             </ul>
           </div>
-        </div>
+        </article>
       </div>
     </div>
   </section>
 
   <!-- PROJECTS -->
-  <section id="projects" class="section section-dark tile-2">
-    <div class="container">
-      <h2 class="section-title reveal">Projects</h2>
+  <section id="projects" class="section section-tint">
+    <div class="wrap">
+      <header class="section-head section-head-row reveal">
+        <span class="section-index">04</span>
+        <h2 class="section-title">Projects</h2>
+      </header>
 
       <div class="project-filters reveal">
-        <input type="text" id="projectSearch" class="project-search" placeholder="Search projects by name or tag...">
-        <div class="tag-buttons">
-          <button class="tag-btn active" data-tag="all">All</button>
-          <button class="tag-btn" data-tag="nlp">NLP / LLM</button>
-          <button class="tag-btn" data-tag="recsys">Recommendation</button>
-          <button class="tag-btn" data-tag="data">Data / IoT</button>
+        <label class="search-field">
+          <span class="visually-hidden">Search projects</span>
+          <input type="search" id="projectSearch" class="project-search" placeholder="Search projects by name or tag…" autocomplete="off">
+        </label>
+        <div class="tag-buttons" role="group" aria-label="Filter projects">
+          <button class="tag-btn active" data-tag="all" aria-pressed="true">All</button>
+          <button class="tag-btn" data-tag="nlp" aria-pressed="false">NLP / LLM</button>
+          <button class="tag-btn" data-tag="recsys" aria-pressed="false">Recommendation</button>
+          <button class="tag-btn" data-tag="data" aria-pressed="false">Data / IoT</button>
         </div>
       </div>
 
       <div class="projects-grid" id="projectsGrid">
 
         <article class="project-card reveal" data-tags="nlp">
-          <div class="project-thumb">🤖</div>
+          <div class="project-top">
+            <span class="project-num">01</span>
+            <svg class="icon project-arrow"><use href="#i-arrow-ur"/></svg>
+          </div>
           <h3>Mass Chatbot — Zenify</h3>
           <p class="project-org">Data Governance Laboratory, RIPT</p>
-          <p>Fine-tuned and distilled a local open-source LLM using knowledge extracted from GPT-4 chat traces,
+          <p class="project-desc">Fine-tuned and distilled a local open-source LLM using knowledge extracted from GPT-4 chat traces,
              achieving high parity with cloud-model response quality. Built the full distillation pipeline —
              trace collection, cleaning, and supervised fine-tuning — enabling the chatbot to serve production
              traffic on local infrastructure and reducing reliance on paid cloud inference APIs.</p>
-          <div class="project-tags"><span>Python</span><span>PyTorch</span><span>Hugging Face</span><span>Knowledge Distillation</span></div>
+          <div class="chips chips-sm"><span>Python</span><span>PyTorch</span><span>Hugging Face</span><span>Knowledge Distillation</span></div>
         </article>
 
         <article class="project-card reveal" data-tags="nlp recsys">
-          <div class="project-thumb">🧾</div>
+          <div class="project-top">
+            <span class="project-num">02</span>
+            <svg class="icon project-arrow"><use href="#i-arrow-ur"/></svg>
+          </div>
           <h3>JD Matching &amp; Recommendation System</h3>
           <p class="project-org">Data Governance Laboratory, RIPT</p>
-          <p>Designed and fine-tuned NLP and recommendation models to match job descriptions with candidate
+          <p class="project-desc">Designed and fine-tuned NLP and recommendation models to match job descriptions with candidate
              profiles in a production setting, including end-to-end data preprocessing — cleaning and feature
              engineering — for domain-specific datasets.</p>
-          <div class="project-tags"><span>NLP</span><span>Recommendation Systems</span><span>Python</span></div>
+          <div class="chips chips-sm"><span>NLP</span><span>Recommendation Systems</span><span>Python</span></div>
         </article>
 
         <article class="project-card reveal" data-tags="data">
-          <div class="project-thumb">🌱</div>
+          <div class="project-top">
+            <span class="project-num">03</span>
+            <svg class="icon project-arrow"><use href="#i-arrow-ur"/></svg>
+          </div>
           <h3>Energy Simulator</h3>
           <p class="project-org">Fukuoka Institute of Technology (FIT) – RIPT Exchange</p>
-          <p>Collected and preprocessed environmental sensor data with Pandas and NumPy to feed IoT-based
+          <p class="project-desc">Collected and preprocessed environmental sensor data with Pandas and NumPy to feed IoT-based
              simulation pipelines. Deployed and monitored IoT sensors for reliable, continuous data collection,
              validating and cleaning readings before feeding downstream simulation models.</p>
-          <div class="project-tags"><span>Python</span><span>Pandas</span><span>NumPy</span><span>IoT</span></div>
+          <div class="chips chips-sm"><span>Python</span><span>Pandas</span><span>NumPy</span><span>IoT</span></div>
         </article>
 
       </div>
@@ -222,94 +336,125 @@
 
   <!-- CERTIFICATIONS -->
   <section id="certifications" class="section">
-    <div class="container">
-      <h2 class="section-title reveal">Certifications</h2>
-      <div class="cert-grid">
+    <div class="wrap split">
+      <header class="section-head reveal">
+        <span class="section-index">05</span>
+        <h2 class="section-title">Certifications</h2>
+      </header>
 
-        <a class="cert-card reveal" href="https://drive.google.com/drive/folders/1ason8gExO-U4cv8OEOsSmLaSJO0DSpDE?usp=sharing" target="_blank" rel="noopener">
-          <div class="cert-icon">🎓</div>
-          <h3>FIT – PTIT Exchange Certificate</h3>
-          <p>Certified participant, exchange program between Fukuoka Institute of Technology (FIT) and the
-             Research Institute of Posts and Telecommunications (RIPT).</p>
-        </a>
+      <div class="split-body">
+        <ul class="cert-list">
+          <li class="reveal">
+            <a class="cert-row" href="https://drive.google.com/drive/folders/1ason8gExO-U4cv8OEOsSmLaSJO0DSpDE?usp=sharing" target="_blank" rel="noopener">
+              <span class="cert-main">
+                <span class="cert-title">FIT – PTIT Exchange Certificate</span>
+                <span class="cert-desc">Certified participant, exchange program between Fukuoka Institute of Technology (FIT) and the Research Institute of Posts and Telecommunications (RIPT).</span>
+              </span>
+              <svg class="icon cert-arrow"><use href="#i-arrow-ur"/></svg>
+            </a>
+          </li>
+          <li class="reveal">
+            <a class="cert-row" href="https://drive.google.com/drive/folders/1ason8gExO-U4cv8OEOsSmLaSJO0DSpDE?usp=sharing" target="_blank" rel="noopener">
+              <span class="cert-main">
+                <span class="cert-title">IELTS Certificate</span>
+                <span class="cert-desc">English language proficiency — IELTS 6.0.</span>
+              </span>
+              <svg class="icon cert-arrow"><use href="#i-arrow-ur"/></svg>
+            </a>
+          </li>
+          <li class="reveal">
+            <a class="cert-row" href="https://drive.google.com/drive/folders/1ason8gExO-U4cv8OEOsSmLaSJO0DSpDE?usp=sharing" target="_blank" rel="noopener">
+              <span class="cert-main">
+                <span class="cert-title">Supervised Machine Learning: Regression and Classification</span>
+                <span class="cert-desc">Coursera — Andrew Ng / DeepLearning.AI.</span>
+              </span>
+              <svg class="icon cert-arrow"><use href="#i-arrow-ur"/></svg>
+            </a>
+          </li>
+          <li class="reveal">
+            <a class="cert-row" href="https://drive.google.com/drive/folders/1ason8gExO-U4cv8OEOsSmLaSJO0DSpDE?usp=sharing" target="_blank" rel="noopener">
+              <span class="cert-main">
+                <span class="cert-title">MySQL for Data Engineering</span>
+                <span class="cert-desc">Coursera — Duke University.</span>
+              </span>
+              <svg class="icon cert-arrow"><use href="#i-arrow-ur"/></svg>
+            </a>
+          </li>
+          <li class="reveal">
+            <a class="cert-row" href="https://drive.google.com/drive/folders/1ason8gExO-U4cv8OEOsSmLaSJO0DSpDE?usp=sharing" target="_blank" rel="noopener">
+              <span class="cert-main">
+                <span class="cert-title">Learning to Work with APIs</span>
+                <span class="cert-desc">Coursera certificate.</span>
+              </span>
+              <svg class="icon cert-arrow"><use href="#i-arrow-ur"/></svg>
+            </a>
+          </li>
+          <li class="reveal">
+            <a class="cert-row" href="https://drive.google.com/drive/folders/1ason8gExO-U4cv8OEOsSmLaSJO0DSpDE?usp=sharing" target="_blank" rel="noopener">
+              <span class="cert-main">
+                <span class="cert-title">Letter of Reference</span>
+                <span class="cert-desc">Professional recommendation letter.</span>
+              </span>
+              <svg class="icon cert-arrow"><use href="#i-arrow-ur"/></svg>
+            </a>
+          </li>
+        </ul>
 
-        <a class="cert-card reveal" href="https://drive.google.com/drive/folders/1ason8gExO-U4cv8OEOsSmLaSJO0DSpDE?usp=sharing" target="_blank" rel="noopener">
-          <div class="cert-icon">🗣️</div>
-          <h3>IELTS Certificate</h3>
-          <p>English language proficiency — IELTS 6.0.</p>
-        </a>
-
-        <a class="cert-card reveal" href="https://drive.google.com/drive/folders/1ason8gExO-U4cv8OEOsSmLaSJO0DSpDE?usp=sharing" target="_blank" rel="noopener">
-          <div class="cert-icon">📗</div>
-          <h3>Supervised Machine Learning: Regression and Classification</h3>
-          <p>Coursera — Andrew Ng / DeepLearning.AI.</p>
-        </a>
-
-        <a class="cert-card reveal" href="https://drive.google.com/drive/folders/1ason8gExO-U4cv8OEOsSmLaSJO0DSpDE?usp=sharing" target="_blank" rel="noopener">
-          <div class="cert-icon">🗄️</div>
-          <h3>MySQL for Data Engineering</h3>
-          <p>Coursera — Duke University.</p>
-        </a>
-
-        <a class="cert-card reveal" href="https://drive.google.com/drive/folders/1ason8gExO-U4cv8OEOsSmLaSJO0DSpDE?usp=sharing" target="_blank" rel="noopener">
-          <div class="cert-icon">🔌</div>
-          <h3>Learning to Work with APIs</h3>
-          <p>Coursera certificate.</p>
-        </a>
-
-        <a class="cert-card reveal" href="https://drive.google.com/drive/folders/1ason8gExO-U4cv8OEOsSmLaSJO0DSpDE?usp=sharing" target="_blank" rel="noopener">
-          <div class="cert-icon">✉️</div>
-          <h3>Letter of Reference</h3>
-          <p>Professional recommendation letter.</p>
-        </a>
-
+        <p class="cert-all reveal">
+          <a class="link-arrow" href="https://drive.google.com/drive/folders/1ason8gExO-U4cv8OEOsSmLaSJO0DSpDE?usp=sharing" target="_blank" rel="noopener">View all certificates on Google Drive <svg class="icon"><use href="#i-arrow-ur"/></svg></a>
+        </p>
       </div>
-      <p class="cert-link reveal">
-        <a href="https://drive.google.com/drive/folders/1ason8gExO-U4cv8OEOsSmLaSJO0DSpDE?usp=sharing" target="_blank" rel="noopener">View all certificates on Google Drive →</a>
-      </p>
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section id="contact" class="section section-dark tile-3">
-    <div class="container">
-      <h2 class="section-title reveal">Get In Touch</h2>
+  <section id="contact" class="section contact">
+    <div class="wrap">
+      <header class="section-head section-head-row reveal">
+        <span class="section-index">06</span>
+        <h2 class="section-title">Get in touch</h2>
+      </header>
 
-      <div class="contact-layout reveal">
-        <div class="contact-info">
-          <p>📍 Hanoi, Vietnam</p>
-          <p>📞 <a href="tel:+84966638825">+84 966 638 825</a></p>
-          <p>✉️ <a href="mailto:ducanhdn.ptit@gmail.com">ducanhdn.ptit@gmail.com</a></p>
+      <div class="contact-layout">
+        <div class="contact-info reveal">
+          <p class="contact-headline">Have a model to ship or a problem worth <em>researching?</em></p>
+          <ul class="contact-list">
+            <li><svg class="icon"><use href="#i-pin"/></svg>Hanoi, Vietnam</li>
+            <li><svg class="icon"><use href="#i-phone"/></svg><a href="tel:+84966638825">+84 966 638 825</a></li>
+            <li><svg class="icon"><use href="#i-mail"/></svg><a href="mailto:ducanhdn.ptit@gmail.com">ducanhdn.ptit@gmail.com</a></li>
+          </ul>
         </div>
 
-        <form id="contactForm" class="contact-form" novalidate>
-          <div class="form-group">
-            <label for="name">Full name</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name">
-            <span class="error-message" id="nameError"></span>
-          </div>
+        <form id="contactForm" class="contact-form reveal" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your name" autocomplete="name">
+              <span class="error-message" id="nameError" role="alert"></span>
+            </div>
 
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="you@example.com">
-            <span class="error-message" id="emailError"></span>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email">
+              <span class="error-message" id="emailError" role="alert"></span>
+            </div>
           </div>
 
           <div class="form-group">
             <label for="phone">Phone number</label>
-            <input type="tel" id="phone" name="phone" placeholder="09xxxxxxxx">
-            <span class="error-message" id="phoneError"></span>
+            <input type="tel" id="phone" name="phone" placeholder="09xxxxxxxx" autocomplete="tel">
+            <span class="error-message" id="phoneError" role="alert"></span>
           </div>
 
           <div class="form-group">
             <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" maxlength="300" placeholder="Type your message..."></textarea>
+            <textarea id="message" name="message" rows="5" maxlength="300" placeholder="Type your message…"></textarea>
             <div class="char-counter"><span id="charCount">0</span>/300 characters</div>
-            <span class="error-message" id="messageError"></span>
+            <span class="error-message" id="messageError" role="alert"></span>
           </div>
 
-          <button type="submit" class="btn btn-primary">Send message</button>
-          <p class="form-success" id="formSuccess" hidden>Message sent! Thank you for reaching out.</p>
+          <button type="submit" class="btn btn-primary">Send message <svg class="icon"><use href="#i-arrow-r"/></svg></button>
+          <p class="form-success" id="formSuccess" hidden>Thanks! Your email app should open with the message ready to send.</p>
         </form>
       </div>
     </div>
@@ -318,17 +463,19 @@
 </main>
 
 <footer class="site-footer">
-  <div class="container footer-inner">
+  <div class="wrap footer-inner">
     <p>&copy; <span id="currentYear"></span> Đặng Nguyễn Đức Anh. All rights reserved.</p>
     <div class="social-links">
-      <a href="mailto:ducanhdn.ptit@gmail.com" aria-label="Email">Email</a>
-      <a href="#" aria-label="GitHub">GitHub</a>
-      <a href="https://drive.google.com/drive/folders/1ason8gExO-U4cv8OEOsSmLaSJO0DSpDE?usp=sharing" target="_blank" rel="noopener" aria-label="Credentials">Credentials</a>
+      <a href="mailto:ducanhdn.ptit@gmail.com">Email</a>
+      <a href="https://github.com/ducanhthecodingbeast" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://drive.google.com/drive/folders/1ason8gExO-U4cv8OEOsSmLaSJO0DSpDE?usp=sharing" target="_blank" rel="noopener">Credentials</a>
     </div>
   </div>
 </footer>
 
-<button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+<button id="backToTop" class="back-to-top" aria-label="Back to top">
+  <svg class="icon" style="transform:rotate(-90deg)"><use href="#i-arrow-r"/></svg>
+</button>
 
 <script src="js/script.js"></script>
 </body>
